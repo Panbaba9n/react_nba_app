@@ -8,7 +8,7 @@ class NewsSlider extends Component {
 
     state = {
         news: []
-    }
+    };
 
     componentWillMount() {
         axios.get(`${URL}/articles?_start=${this.props.start}&_end=${this.props.amount}`)
